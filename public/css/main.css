@@ -1,0 +1,96 @@
+/* Mobile first */
+
+html {
+  overflow-y : scroll;
+/*  background : rgb(255,255,255); */
+/*  This grid doesn't seem to work*/
+/*  background : rgb(255,255,255) url(/img/grid.png) repeat-y 18.35% 0;*/
+} 
+
+
+body { 
+margin : 0 auto;
+padding : 0;
+width:320px;
+height:100%; 
+}
+
+
+figure{
+  display:block;
+  margin: 0;
+}
+
+  
+figure{
+  background-image:url('/images/pixar-320.jpg');
+  background-repeat:no-repeat;  
+  width:320px;
+  height:247px;
+}
+  
+
+/* Screen >= 480 */
+@media screen and (min-width:480px){
+  
+  body {
+    width: 480px;
+  }
+    
+  figure{
+    background-image:url('/images/pixar-480.jpg');
+    background-repeat:no-repeat;    
+    width:100%;
+    height:323px;
+  }
+  
+}
+
+
+/* Screen >= 600 */
+@media screen and (min-width:600px){
+  
+    body {
+      width: 600px;
+    }
+    figure{
+      background-image:url('/images/pixar-600.jpg');
+      background-repeat:no-repeat;
+      width:100%;
+      height:299px;
+    }    
+}
+
+
+/* Screen >= 768 */
+@media screen and (min-width:768px){
+  
+    body {
+      width: 768px;
+    }
+    figure{
+      background-image:url('/images/pixar-768.jpg');
+      background-repeat:no-repeat;
+      width:100%;
+      height:421px;
+    }    
+}
+
+
+/* Screen >= 960 */
+@media screen and (min-width:960px){
+    
+    body {
+      width:960px;
+    }
+    
+    figure{
+      background-image:url('/images/pixar-960.jpg');
+      background-repeat:no-repeat;      
+      width:100%;
+      height:466px;
+    }
+    
+}
+
+
